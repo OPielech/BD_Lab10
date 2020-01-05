@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="nagrody" table="nagrody">
+        <id name="award_id" type="string" column="award_id"></id>
+
+        <property name="award_year" column="award_year"></property>
+        <property name="award_aktor_age" column="award_aktor_age"></property>
+        <property name="award_actor_id" column="award_actor_id"></property>
+        <property name="award_actor_movie" column="award_actor_movie"></property>
+
+    </class>
+
+</hibernate-mapping>
