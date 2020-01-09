@@ -44,24 +44,27 @@ public class TestHibernate {
 //        showQueryResults("select count(award_id)/(select count(award_id) from nagrody)*100 from nagrody where award_actor_id like 'AF%'");
 
 //        PODPUNKT E):
-        String select = "select a.name, count(b.award_id) from nagrody b join aktorzy_aktorki a on b.award_actor_id=a.id group by b.award_actor_id having count(b.award_id)>1 order by count(b.award_id) desc";
-        Query query = session.createQuery(select);
-        List list = query.list();
-
-        System.out.println("e) Wyświetl imiona i nazwiska aktorów/aktorek, którzy zdobyli więcej niż jednego Oskara i uszereguj ich wg malejącej liczby nagród.");
-        System.out.println(Arrays.deepToString(list.toArray()));
+//        String select = "select a.name, count(b.award_id) from nagrody b join aktorzy_aktorki a on b.award_actor_id=a.id group by b.award_actor_id having count(b.award_id)>1 order by count(b.award_id) desc";
+//        Query query = session.createQuery(select);
+//        List list = query.list();
+//
+//        System.out.println("e) Wyświetl imiona i nazwiska aktorów/aktorek, którzy zdobyli więcej niż jednego Oskara i uszereguj ich wg malejącej liczby nagród.");
+//        System.out.println(Arrays.deepToString(list.toArray()));
 
 
 //        PODPUNKT F):
+//        System.out.println("f) W pierwszych latach Oskary były przyznawane więcej niż jednej osobie w danej kategorii. Wyznacz, ile było rozdań nagród.");
 //        showQueryResults("select count(award_id)/2 from nagrody");
 
 //        PODPUNKT G):
 //        String select1 = "select a.name, b.award_year, b.award_actor_movie from aktorzy_aktorki a join nagrody b on a.id=b.award_actor_id and (a.name='Anthony Hopkins' or a.name='Sidney Poitier' or a.name='Jeff Bridges')";
 //        Query query1 = session.createQuery(select1);
 //        List list1 = query1.list();
+//        System.out.println("g) Wybierz trzech aktorów z listy stu najwybitniejszych aktorów wg serwisu IMDb2 i wyświetl dla nich zestawienie w formie: imię i nazwisko, rok nagrody i film. ");
 //        System.out.println(Arrays.deepToString(list1.toArray()));
 
 //        PODPUNKT H):
+//        System.out.println("h) Wyznacz, ile było różnych laureatów pośród kobiet i mężczyzn (osobno).");
 //        showQueryResults("select count(distinct award_actor_id) from nagrody where award_actor_id like 'AM%'");
 //        showQueryResults("select count(distinct award_actor_id) from nagrody where award_actor_id like 'AF%'");
 
